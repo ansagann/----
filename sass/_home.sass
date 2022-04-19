@@ -1,42 +1,46 @@
 @import "var"
 
+.home
+  background-color: lighten($accent, 80%)
+  padding: 50px 0 110px 0
+  overflow: hidden
+
 .home-content
   display: flex
+  color: $accent
 
 .offer
-  width: 40vw
+  width: 45vw
   display: flex
   flex-direction: column
   align-items: start
   justify-content: center
   &__headline
     margin-bottom: 15px
-    font-size: 36px
+    font-size: 42px
   &__description
     margin-bottom: 35px
     font-size: 20px
 
 .product
   display: flex
-  width: 60vw
+  width: 55vw
   justify-content: center
   position: relative
   align-items: center
   &__image
     object-fit: cover
-    width: 500px
-    height: 500px
+    width: 550px
+    height: 550px
     z-index: 100
   &::after
     content: ''
     position: absolute
     display: inline-block
-    width: 450px
-    height: 450px
-    background: rgb(93,57,0)
-    background: linear-gradient(0deg, rgba(93,57,0,1) 0%, rgba(249,167,38,1) 100%)
-    z-index: 9999
-    border-radius: 50px 40% 50px 40%
-    top: 50px
-    right: 0
+    width: 1000px
+    height: 1000px
+    background: darken($accent-orange, 15%)
+    top: -100px
+    transform: rotateZ(20deg)
+    left: 250px
     z-index: 50
