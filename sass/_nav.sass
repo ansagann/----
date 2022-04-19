@@ -1,2 +1,51 @@
-body
-  background-color: #fff
+@import "var"
+
+.nav
+  padding: 10px 0 10px 0
+  font-weight: bold
+  font-size: 17px
+  .nav-content
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.logo
+  height: 75px
+  width: 75px
+  &-img
+    width: 100%
+    height: 100%
+
+.navigation
+  .navigation-list
+    display: flex
+    list-style: none
+    &__item
+      margin-right: 30px
+      a
+        text-decoration: none
+        color: $accent
+        position: relative
+        &::after
+          content: ''
+          display: inline-block
+          position: absolute
+          width: 0%
+          height: 3px
+          background-color: $accent
+          bottom: -6px
+          left: 0
+          transition: 0.3s
+        &:hover::after
+          width: 100%
+.contact
+  &__button
+    border: none
+    display: inline-block
+    padding: 0 20px
+    height: 40px
+    background-color: $accent-orange
+    color: $white
+    cursor: pointer
+    font-size: 16px
+    font-family: "Montserrat"
