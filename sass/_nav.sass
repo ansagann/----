@@ -11,10 +11,9 @@
 
 .logo
   height: 75px
-  width: 75px
-  &-img
-    width: 100%
-    height: 100%
+  width: 150px
+  img
+    width: 75px
 
 .navigation
   .navigation-list
@@ -38,14 +37,18 @@
           transition: 0.3s
         &:hover::after
           width: 100%
-.contact
-  &__button
-    border: none
-    display: inline-block
-    padding: 0 20px
-    height: 40px
-    background-color: $accent-orange
-    color: $white
-    cursor: pointer
-    font-size: 16px
-    font-family: "Montserrat"
+
+.main-button
+  display: inline-block
+  padding: 13px 20px
+  background-color: $accent-orange
+  color: $white
+  cursor: pointer
+  font-size: 16px
+  font-family: "Montserrat"
+  text-decoration: none
+  font-weight: normal
+  box-shadow: 11px 10px 9px -3px rgba(249, 167, 38, 0.42)
+  transition: 0.3s
+  &:hover
+    background-color: darken($accent-orange, 10%)
