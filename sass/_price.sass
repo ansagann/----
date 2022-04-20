@@ -13,16 +13,41 @@
   grid-column-gap: 30px
   grid-row-gap: 30px
   .cap
-    outline: 1px solid black
-    height: 400px
+    outline: 1px solid #bbb
     &-image
       width: 100%
       height: 250px
       object-fit: cover
+      display: inline-block
   .cap-3
     grid-column: 3/5
     display: inline-block
+    outline: none
     img
       width: 100%
       height: 100%
       object-fit: cover
+
+.cap-description
+  padding: 15px
+  margin-top: 15px
+  .main-button
+    background-color: lighten($accent, 15%)
+    box-shadow: none
+    &:hover
+      background-color: lighten($accent, 5%)
+
+.cap-price
+  font-size: 22px
+  font-weight: bold
+  margin-bottom: 10px
+  display: block
+
+.cap-name
+  font-size: 14px
+  display: block
+  margin-bottom: 20px
+
+.cap-shop-link
+  padding: 7px 15px
+  text-align: center
